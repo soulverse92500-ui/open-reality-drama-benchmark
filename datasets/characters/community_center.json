@@ -1,0 +1,7 @@
+{
+  "license": "CC-BY-4.0",
+  "characters": [
+    {"id": "lin", "facts": {"age": 31, "jacket": "navy", "role": "visitor"}},
+    {"id": "chen", "facts": {"age": 27, "jacket": "gray", "role": "volunteer"}}
+  ]
+}
