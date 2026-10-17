@@ -1,0 +1,12 @@
+{
+  "id": "community-center-lost-umbrella",
+  "license": "CC-BY-4.0",
+  "language": "zh-TW",
+  "setting": "A fictional community center on a rainy afternoon",
+  "premise": "A visitor reports a missing umbrella and a volunteer checks the front desk log.",
+  "constraints": [
+    "All characters and events are fictional",
+    "No real brands, addresses, or identifiable people",
+    "Resolve the incident without violence"
+  ]
+}
