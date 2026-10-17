@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use ORDB in an evaluation, please cite this repository."
+title: "Open Reality Drama Benchmark"
+type: software
+version: 0.1.0
+date-released: 2026-10-17
+license: MIT
+authors:
+  - name: "ORDB contributors"
+repository-code: "https://github.com/soulverse92500-ui/open-reality-drama-benchmark"
