@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/ordb/run.schema.json",
+  "title": "ORDB structured run",
+  "type": "object",
+  "required": ["characters", "episodes"],
+  "properties": {
+    "run_name": {"type": "string"},
+    "characters": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "facts"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "facts": {"type": "object"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "episodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["index"],
+        "properties": {
+          "index": {"type": "integer", "minimum": 1},
+          "character_states": {"type": "object"},
+          "start_state": {"type": "object"},
+          "end_state": {"type": "object"},
+          "dialogue": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["speaker", "text"],
+              "properties": {
+                "speaker": {"type": "string"},
+                "text": {"type": "string"}
+              }
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
