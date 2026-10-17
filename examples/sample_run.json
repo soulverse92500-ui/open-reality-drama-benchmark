@@ -1,0 +1,49 @@
+{
+  "run_name": "community-center-lost-umbrella",
+  "characters": [
+    {
+      "id": "lin",
+      "facts": {
+        "age": 31,
+        "jacket": "navy",
+        "role": "visitor"
+      }
+    },
+    {
+      "id": "chen",
+      "facts": {
+        "age": 27,
+        "jacket": "gray",
+        "role": "volunteer"
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "index": 1,
+      "character_states": {
+        "lin": {"age": 31, "jacket": "navy"},
+        "chen": {"age": 27, "jacket": "gray"}
+      },
+      "start_state": {"location": "lobby", "umbrella": "rack"},
+      "end_state": {"location": "front_desk", "umbrella": "counter"},
+      "dialogue": [
+        {"speaker": "lin", "text": "我剛才放在這裡。"},
+        {"speaker": "chen", "text": "等一下，我幫你查。"}
+      ]
+    },
+    {
+      "index": 2,
+      "character_states": {
+        "lin": {"age": 31, "jacket": "navy"},
+        "chen": {"age": 27, "jacket": "gray"}
+      },
+      "start_state": {"location": "front_desk", "umbrella": "counter"},
+      "end_state": {"location": "security_room", "umbrella": "counter"},
+      "dialogue": [
+        {"speaker": "chen", "text": "監視器拍到有人拿錯。"},
+        {"speaker": "lin", "text": "那個人還在附近嗎？"}
+      ]
+    }
+  ]
+}
